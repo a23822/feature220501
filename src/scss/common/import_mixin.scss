@@ -1,0 +1,42 @@
+@charset "UTF-8";
+
+//말줄임
+// 사용법
+// @include elss() => 한줄 말줄임
+// @include elss(2, 2.4rem) => 한 줄당 2.4rem 높이를 가지고 두 줄 말줄임
+@mixin elss($lineNum: 1, $lineHeight: 1rem) {
+    overflow: hidden;
+    @if ($lineNum > 1) {
+        display: block;
+        display: -webkit-box;
+        max-height: $lineHeight * $lineNum;
+        -webkit-line-clamp: $lineNum;
+        -webkit-box-orient:vertical;
+        line-height:$lineHeight;
+        word-break:break-all;
+        word-wrap:break-word;
+    } @else {
+        white-space: nowrap;
+    }
+    text-overflow: ellipsis;
+}
+
+// float clear
+@mixin clear {
+    content: '';
+    display: block;
+    clear: both;
+}
+
+//다크모드
+@mixin mod-dark($type:'') {
+    @critical {
+        @if $type == 'media' {
+            @media (prefers-color-scheme: dark) {
+                @content
+            }
+        }@else {
+            @content
+        }
+    }
+}
