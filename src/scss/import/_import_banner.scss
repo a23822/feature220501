@@ -1,0 +1,174 @@
+@charset 'UTF-8';
+
+#wrapper-banner {
+
+}
+
+.header-banner {
+    position: relative;
+    &-wrap {
+
+    }
+    #banner-flick {
+        &.type_resize {
+            .flicking-camera {
+                transition: none;
+            }
+        }
+    }
+    .flicking-camera {
+        transition: transform 0.6s cubic-bezier(0.32, 0, 0.67, 0);
+    }
+    .card-panel {
+        overflow: hidden;
+        width: 100%;
+    }
+    &-video {
+        @include mask;
+        &-wrap {
+            position: relative;
+            padding-top: 56.25%;
+        }
+        &-content {
+            width: 100%;
+            pointer-events: none;
+            &::-webkit-media-controls-fullscreen-button { display: none; }
+            /* 전체화면 버튼 */ 
+            &::-webkit-media-controls-fullscreen-button {display: none;}
+
+            /* 일시정지, 재생 버튼 */ 
+            &::-webkit-media-controls-play-button {display: none;}
+
+            /* 재생 슬라이드..? */ 
+            &::-webkit-media-controls-timeline {display: none;}
+
+            /* 현재 진행 시간 */ 
+            &::-webkit-media-controls-current-time-display{display: none;}
+
+            /* 전체 시간 */ 
+            &::-webkit-media-controls-time-remaining-display {display: none;}
+
+            /* 음소거 버튼 */ 
+            &::-webkit-media-controls-mute-button {display: none;}
+
+            /* 볼륨 조절 슬라이드 */ 
+            &::-webkit-media-controls-volume-slider {display: none;}
+        }
+        &:after {
+            @include mask;
+            background: linear-gradient(to top, #000, rgba(0, 0, 0, 0.3) 50%);
+            background-color: rgba(0, 0, 0, 0.08);
+            z-index: 10;
+            pointer-events: none;
+            content: '';
+        }
+        &-desc {
+            position: absolute;
+            left: 0;
+            right: 0;
+            bottom: 50px;
+            text-align: center;
+            z-index: 20;
+            &-title {
+                color: #fff;
+                font-size: 32px;
+                margin-bottom: 12px;
+                line-height: 40px;
+                font-weight: 500;
+                letter-spacing: -0.5px;
+            }
+            &-txt {
+                color: #fff;
+                font-size: 13px;
+                line-height: 16px;
+            }
+            &-btn-group {
+                margin: 0 auto;
+            }
+        }
+    }
+    &-pagination {
+        
+        &-wrap {
+            position: absolute;
+            left: 0;
+            right: 0;
+            bottom: 18px;
+            text-align: center;
+            z-index: 50;
+        }
+
+        .ico_pagination {
+            overflow: hidden;
+            display: inline-block;
+            width: 10px;
+            height: 10px;
+            background-color: rgba(255, 255, 255, 0.4);
+            border-radius: 50%;
+            color: transparent;
+            white-space: nowrap;
+            vertical-align: bottom;
+            transition: background 0.5s ease-out;
+            &.on {
+                background-color: rgba(255, 255, 255, 1);
+            }
+            & + .ico_pagination {
+                margin-left: 8px;
+            }
+        }
+    }
+    &-btn {
+        overflow: hidden;
+        position: absolute;
+        top: 0;
+        bottom: 0;
+        margin: auto 0;
+        width: 40px;
+        height: 40px;
+        border-radius: 50%;
+        background-color: rgba(255, 255, 255, 0.3);
+        white-space: nowrap;
+        opacity: 0;
+        transition: opacity 0.7s ease-out, background 0.3s cubic-bezier(0.645, 0.045, 0.355,1);
+        &.active {
+            opacity: 1;
+            pointer-events: all;
+            &:hover {
+                background-color: rgba(255, 255, 255, 0.85);
+            }
+        }
+        .ico_arrow {
+            display: block;
+            position: relative;
+            height: 100%;
+            color: transparent;
+            &:before {
+                content: '';
+                position: absolute;
+                top: 12px;
+                left: 9px;
+                width: 16px;
+                height: 16px;
+                border-top: 2px solid #000;
+                border-right: 2px solid #000;
+                transform: rotate(45deg);
+            }
+        }
+        &-group {
+            display: none;
+            @include mask;
+            z-index: 50;
+            pointer-events: none;
+        }
+        &.type_prev {
+            left: 30px;
+            .ico_arrow {
+                transform: scale(-1);
+            }
+        }
+        &.type_next {
+            right: 30px;
+        }
+    }
+
+}
