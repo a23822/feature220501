@@ -8,7 +8,7 @@
   <meta name="mobile-web-app-capable" content="yes">
   <meta name="apple-mobile-web-app-capable" content="yes">
   <meta name="apple-mobile-web-app-title" content="Piot">
-  <link rel="shortcut icon" href="assets/favicon/favicon.ico">
+  <link rel="shortcut icon" href="./favicon/favicon.ico">
   <title>Piot</title>
 
   <!-- Bootstrap CSS -->
@@ -28,242 +28,58 @@
     <header>
       <!-- The Navbar Area -->
       <section id="wrapper-navbar">
-        <nav class="navbar navbar-expand-md navbar-light">
-          <div class="container">
-
-            <!-- Brand Logo -->
-            <a href="index.html" rel="home" class="navbar-brand">
-              <img src="assets/logo/piot_logo_black.svg" alt="Piot" class="piot-logo">
-            </a>
-
-            <!-- Mega Menu -->
-            <div class="mega-menu-wrap" id="mega-menu-wrap-primary">
-
-              <!-- Menu Toggle -->
-              <div class="mega-menu-toggle">
-                <div class="mega-toggle-blocks-right">
-                  <div class="mega-toggle-block mega-menu-toggle-block mega-toggle-block-1" id="mega-toggle-block-1"
-                    tabindex="0">
-                    <span class="mega-toggle-label" role="button" aria-expanded="false">
-                      <span class="mega-toggle-label-closed">MENU</span>
-                      <span class="mega-toggle-label-open">MENU</span>
-                    </span>
-                  </div>
+        <nav class="global-navmenu-wrap">
+            <div class="global-navmenu">
+                <!-- Brand Logo -->
+                <a href="index.html" rel="home" class="btn-home">
+                    <img src="./logo/piot_logo_black.svg" alt="Piot" class="logo-piot">
+                </a>
+                <div class="global-navmenu-list-wrap">
+                    <!-- 햄버거 -->
+                    <button type="button" class="btn-menu">
+                        <div class="ico_wrap">
+                            <div class="ico_hamburger">
+                                <span></span>
+                                <span></span>
+                                <span></span>
+                                <span></span>
+                                <span></span>
+                                <span></span>
+                            </div>
+                        </div>
+                    </button>
+                    <!-- nav -->
+                    <ul class="global-navmenu-list">
+                        <li class="global-navmenu-item">
+                            <div class="global-navmenu-content">
+                                <a href="#" aria-pressed="false" class="global-navmenu-txt">
+                                    Company
+                                </a>
+                            </div>
+                        </li>
+                        <li class="global-navmenu-item">
+                            <div class="global-navmenu-content">
+                                <a href="#" aria-pressed="false" class="global-navmenu-txt">
+                                    Products
+                                </a>
+                            </div>
+                        </li>
+                        <li class="global-navmenu-item">
+                            <div class="global-navmenu-content">
+                                <a href="#" aria-pressed="false" class="global-navmenu-txt">
+                                    Services
+                                </a>
+                            </div>
+                        </li>
+                    </ul>
                 </div>
-              </div>
-
-              <!-- Mega Menu Items -->
-              <ul id="mega-menu-primary" class="mega-menu max-mega-menu mega-menu-horizontal">
-                <li
-                  class="mega-menu-item mega-menu-item-type-post_type mega-menu-item-object-page mega-menu-item-has-children mega-menu-megamenu mega-align-bottom-left mega-menu-grid mega-menu-item-4069"
-                  id="mega-menu-item-4069">
-                  <a class="mega-menu-link" href="#none" aria-haspopup="true" aria-expanded="false" tabindex="0">Company
-                    <span class="mega-indicator" data-has-click-event="true"></span>
-                  </a>
-                  <ul class="mega-sub-menu mega-sub-menu-closed">
-                    <li class="mega-menu-row" id="mega-menu-4069-0">
-                      <ul class="mega-sub-menu">
-                        <li class="mega-menu-column mega-menu-columns-4-of-12 mega-menu-clear" id="mega-menu-4069-0-0">
-                          <ul class="mega-sub-menu">
-                            <li
-                              class="mega-menu-item mega-menu-item-type-widget magmenuitem_widget mega-menu-item-magmenuitem_widget-17"
-                              id="mega-menu-item-magmenuitem_widget-17">
-                              <a class="megamenu_link" href="#none">
-                                <h4 class="mega-block-title">About Us</h4>
-                                <p>Fully automated order pigh <br>
-                                  of shoe boxes.</p>
-                                <div class="mega-image">
-                                  <img src="" alt="">
-                                </div>
-                              </a>
-                            </li>
-                          </ul>
-                        </li>
-                        <li class="mega-menu-column mega-menu-columns-4-of-12" id="mega-menu-4069-0-1">
-                          <ul class="mega-sub-menu">
-                            <li
-                              class="mega-menu-item mega-menu-item-type-widget magmenuitem_widget mega-menu-item-magmenuitem_widget-19"
-                              id="mega-menu-item-magmenuitem_widget-19">
-                              <a class="megamenu_link" href="#none">
-                                <h4 class="mega-block-title">News</h4>
-                                <p>Intelligent line feeding in the <br>
-                                  industrial production.</p>
-                                <div class="mega-image">
-                                  <img src="" alt="">
-                                </div>
-                              </a>
-                            </li>
-                          </ul>
-                        </li>
-                      </ul>
-                    </li>
-                  </ul>
-                </li>
-                <li
-                  class="mega-menu-item mega-menu-item-type-post_type mega-menu-item-object-page mega-menu-item-has-children mega-menu-megamenu mega-align-bottom-left mega-menu-grid mega-menu-item-4070"
-                  id="mega-menu-item-4070">
-                  <a class="mega-menu-link" href="#none" aria-haspopup="true" aria-expanded="false" tabindex="0">
-                    Products
-                    <span class="mega-indicator" data-has-click-event="true"></span>
-                  </a>
-                  <ul class="mega-sub-menu">
-                    <li class="mega-menu-row" id="mega-menu-4070-0">
-                      <ul class="mega-sub-menu">
-                        <li class="mega-menu-column mega-menu-columns-3-of-12 mega-menu-clear" id="mega-menu-4070-0-0">
-                          <ul class="mega-sub-menu">
-                            <li
-                              class="mega-menu-item mega-menu-item-type-widget magmenuitem_widget mega-menu-item-magmenuitem_widget-20"
-                              id="mega-menu-item-magmenuitem_widget-20"><a class="megamenu_link" href="#none">
-                                <h4 class="mega-block-title">D1</h4>
-                                <p>Autonomous picking robot <br>
-                                  for shoe boxes.<br>
-                                </p>
-                                <div class="mega-image mega-image-flipper">
-                                  <div class="flipper-holder">
-                                    <div class="front face">
-                                      <img src=" " alt="">
-                                    </div>
-                                    <div class="back face center">
-                                      <img src=" " alt="">
-                                    </div>
-                                  </div>
-                                </div>
-                              </a></li>
-                          </ul>
-                        </li>
-                        <li class="mega-menu-column mega-menu-columns-3-of-12" id="mega-menu-4070-0-1">
-                          <ul class="mega-sub-menu">
-                            <li
-                              class="mega-menu-item mega-menu-item-type-widget magmenuitem_widget mega-menu-item-magmenuitem_widget-21"
-                              id="mega-menu-item-magmenuitem_widget-21"><a class="megamenu_link" href="#none">
-                                <h4 class="mega-block-title">D2/D3</h4>
-                                <p>Robot for industrial <br>
-                                  production supply.</p>
-                                <div class="mega-image mega-image-flipper">
-                                  <div class="flipper-holder">
-                                    <div class="front face">
-                                      <img src=" " alt="">
-                                    </div>
-                                    <div class="back face center">
-                                      <img src=" " alt="">
-                                    </div>
-                                  </div>
-                                </div>
-                              </a>
-                            </li>
-                          </ul>
-                        </li>
-                        <li class="mega-menu-column mega-menu-columns-3-of-12 mega-menu-clear" id="mega-menu-4070-0-2">
-                          <ul class="mega-sub-menu">
-                            <li
-                              class="mega-menu-item mega-menu-item-type-widget magmenuitem_widget mega-menu-item-magmenuitem_widget-31"
-                              id="mega-menu-item-magmenuitem_widget-31"><a class="megamenu_link" href=" ">
-                                <h4 class="mega-block-title">UVC</h4>
-                                <p>The modular technology stack for your advanced robot or AGV.</p>
-                                <div class="mega-image mega-image-flipper">
-                                  <div class="flipper-holder">
-                                    <div class="front face">
-                                      <img src=" " alt="">
-                                    </div>
-                                    <div class="back face center">
-                                      <img src=" " alt="">
-                                    </div>
-                                  </div>
-                                </div>
-                              </a>
-                            </li>
-                          </ul>
-                        </li>
-                        <li class="mega-menu-column mega-menu-columns-3-of-12 mega-menu-clear" id="mega-menu-4070-0-2">
-                          <ul class="mega-sub-menu">
-                            <li
-                              class="mega-menu-item mega-menu-item-type-widget magmenuitem_widget mega-menu-item-magmenuitem_widget-31"
-                              id="mega-menu-item-magmenuitem_widget-31"><a class="megamenu_link" href="#none">
-                                <h4 class="mega-block-title">P1</h4>
-                                <p>The modular technology stack for your advanced robot or AGV.</p>
-                                <div class="mega-image mega-image-flipper">
-                                  <div class="flipper-holder">
-                                    <div class="front face">
-                                      <img src=" " alt="">
-                                    </div>
-                                    <div class="back face center">
-                                      <img src=" " alt="">
-                                    </div>
-                                  </div>
-                                </div>
-                              </a>
-                            </li>
-                          </ul>
-                        </li>
-                      </ul>
-                    </li>
-                  </ul>
-                </li>
-                <li
-                  class="mega-menu-item mega-menu-item-type-post_type mega-menu-item-object-page mega-menu-item-has-children mega-menu-megamenu mega-align-bottom-left mega-menu-grid mega-menu-item-4071"
-                  id="mega-menu-item-4071">
-                  <a class="mega-menu-link" href="#none" aria-haspopup="true" aria-expanded="false" tabindex="0">
-                    Services
-                    <span class="mega-indicator" data-has-click-event="true"></span>
-                  </a>
-                  <ul class="mega-sub-menu mega-sub-menu-closed">
-                    <li class="mega-menu-row mega-tech-menu tech-menu" id="mega-menu-4071-0">
-                      <ul class="mega-sub-menu">
-                        <li class="mega-menu-column mega-menu-columns-4-of-12 mega-menu-clear" id="mega-menu-4071-0-0">
-                          <ul class="mega-sub-menu">
-                            <li
-                              class="mega-menu-item mega-menu-item-type-widget magmenuitem_widget mega-menu-item-magmenuitem_widget-23"
-                              id="mega-menu-item-magmenuitem_widget-23">
-                              <a class="megamenu_link" href="#none">
-                                <h4 class="mega-block-title">
-                                  <span class="caps">Robot ODM</span>
-                                </h4>
-                                <p>The robots of the future need a brain.</p>
-                                <div class="mega-image">
-                                  <img src=" " alt="">
-                                </div>
-                              </a>
-                            </li>
-                          </ul>
-                        </li>
-                        <li class="mega-menu-column mega-menu-columns-4-of-12" id="mega-menu-4071-0-1">
-                          <ul class="mega-sub-menu">
-                            <li
-                              class="mega-menu-item mega-menu-item-type-widget magmenuitem_widget mega-menu-item-magmenuitem_widget-26"
-                              id="mega-menu-item-magmenuitem_widget-26">
-                              <a class="megamenu_link" href=" ">
-                                <h4 class="mega-block-title">Robot Consulting</h4>
-                                <p>Adapting to the new</p>
-                                <div class="mega-image">
-                                  <img src=" " alt="">
-                                </div>
-                              </a>
-                            </li>
-                          </ul>
-                        </li>
-                      </ul>
-                    </li>
-                  </ul>
-                </li>
-              </ul>
             </div>
-
-            <!-- hambugger menu -->
-            <div class="hamburger-wrapper">
-              <div class="hamburger hamburger--spin js-hamburger">
-                <div class="hamburger-box">
-                  <div class="hamburger-inner"></div>
-                </div>
-              </div>
-            </div>
-          </div>
         </nav>
         <div class="sub-navmenu-wrap" style="display:none;">
             <ul class="sub-navmenu">
                 <li class="sub-navmenu-item">
                     <div class="sub-navmenu-content">
                         <div class="sub-navmenu-content-inner">
-                            <!-- 2-->
                             <ul class="sub-navmenu-content-list">
                                 <li class="sub-navmenu-content-box">
                                     <strong class="sub-navmenu-content-title">
@@ -300,7 +116,6 @@
                 <li class="sub-navmenu-item">
                     <div class="sub-navmenu-content">
                         <div class="sub-navmenu-content-inner">
-                            <!-- 4 -->
                             <ul class="sub-navmenu-content-list">
                                 <li class="sub-navmenu-content-box">
                                     <strong class="sub-navmenu-content-title">
@@ -365,11 +180,45 @@
                 <li class="sub-navmenu-item">
                     <div class="sub-navmenu-content">
                         <div class="sub-navmenu-content-inner">
-                            <!-- 2-->
+                            <ul class="sub-navmenu-content-list">
+                                <li class="sub-navmenu-content-box">
+                                    <strong class="sub-navmenu-content-title">
+                                        타이틀입니다.
+                                    </strong>
+                                    <div class="sub-navmenu-content-desc">
+                                        이건 설명하는 부분이여<br/>
+                                        this is part of description.
+                                    </div>
+                                    <div class="sub-navmenu-content-img-wrapper">
+                                        <div class="sub-navmenu-content-img-box">
+                                            <img src="https://placeimg.com/1200/800/any" width="100%" alt="" class="sub-navmenu-content-img">
+                                        </div>
+                                    </div>
+                                </li>
+                                <li class="sub-navmenu-content-box">
+                                    <strong class="sub-navmenu-content-title">
+                                        타이틀입니다.
+                                    </strong>
+                                    <div class="sub-navmenu-content-desc">
+                                        이건 설명하는 부분이여<br/>
+                                        this is part of description.
+                                    </div>
+                                    <div class="sub-navmenu-content-img-wrapper">
+                                        <div class="sub-navmenu-content-img-box">
+                                            <img src="" width="100%" alt="" class="sub-navmenu-content-img">
+                                        </div>
+                                    </div>
+                                </li>
+                            </ul>
                         </div>
                     </div>
                 </li>
             </ul>
+        </div>
+        <div class="side-navmenu-wrap">
+            <div class="side-navmenu">
+
+            </div>
         </div>
       </section>
       <!-- End Navbar Area -->
@@ -409,7 +258,7 @@
           </div>
         </div>
         <div class="offcanvas-logo bottom-logo container">
-          <img src="assets/logo/piot_logo_blue.svg" alt="piot" style="width:40px">
+          <img src="./logo/piot_logo_blue.svg" alt="piot" style="width:40px">
         </div>
       </div>
       <!-- End Offcanvas Area -->
@@ -988,7 +837,7 @@
 
             <div class="col-3 col-md-3 text-right">
               <a href="#none">
-                <img class="footer-logo" src="assets/logo/piot_logo_black.svg" alt="Piot">
+                <img class="footer-logo" src="./logo/piot_logo_black.svg" alt="Piot">
               </a>
             </div>
 
@@ -1014,7 +863,47 @@
     <!-- JS -->
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
     <script>
+        var windowWidth = $(window).width();
+        var openedNavSubMenuIndex = 10;
         // 네브 마우스 오버 시 서브 메뉴 노출
+        $('#wrapper-navbar .global-navmenu-item').on('mouseenter', function(e){
+            var self = $(this);
+            var menuIndex = self.index();
+            var subMenu = $('.sub-navmenu');
+            var subMenuItem = subMenu.find(`.sub-navmenu-item:eq(${menuIndex})`);
+            $('.global-navmenu-item .global-navmenu-txt').attr('aria-pressed', false);
+            self.find('.global-navmenu-txt').attr('aria-pressed', true);
+            subMenu.parent().show();
+            subMenuItem.show().siblings().hide();
+            if (windowWidth < 992) {
+                return
+            }
+            if (openedNavSubMenuIndex !== menuIndex) {
+                openedNavSubMenuIndex = menuIndex;
+
+                var animSlideSubMenu = subMenu[0].animate([
+                    {transform: `translate3d(0, ${30}px, 0)`},
+                    {transform: `translate3d(0, ${0}px, 0)`}
+                ], 350);
+                var animFadeSubMenu = subMenuItem[0].animate([
+                    {opacity: `0`},
+                    {opacity: `1`}
+                ], 350);
+            } else {
+                return
+            }
+            subMenuItem.parents('.sub-navmenu-wrap').on('mouseleave', function(e){
+                if (e.pageY > $('#wrapper-navbar').height()) {
+                    $('.global-navmenu-item .global-navmenu-txt').attr('aria-pressed', false);
+                    subMenu.parent().hide();
+                }
+            })
+        });
+        $('.btn-menu').on('click', function(e){
+            var self = $(this).find('.ico_hamburger');
+            self.toggleClass('open');
+            e.preventDefault();
+        });
     </script>
   <!-- <script defer src="assets/scripts/autopimize.js"></script> -->
 </body>
