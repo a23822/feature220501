@@ -10,11 +10,17 @@
     .container {
       max-width: 540px;
     }
+    .sub-navmenu {
+        max-width: 540px;
+    }
   }
   
   @media (min-width: 768px) {
     .container {
       max-width: 720px;
+    }
+    .sub-navmenu {
+        max-width: 720px;
     }
   }
   
@@ -22,11 +28,17 @@
     .container {
       max-width: 1140px;
     }
+    .sub-navmenu {
+        max-width: 1140px;
+    }
   }
   
   @media (min-width: 1200px) {
     .container {
       max-width: 1412px;
+    }
+    .sub-navmenu {
+        max-width: 1412px;
     }
   }
   

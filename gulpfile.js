@@ -22,6 +22,7 @@ const paths = {
     build: './dest',
     src: './src/',
     scss_src: './src/scss',
+    scss_import: './src/scss/import',
     css_src: './src/css',
     sprites_src: './src/sprites',
     scss_import: './src/scss/import'
@@ -59,6 +60,7 @@ function runBrowserSync (cb) {
 		browserSync.init(options.browserSync);
 		gulp.watch(paths.src+'**/*.html').on('change',browserSync.reload);
         gulp.watch(paths.scss_src+'**/*.scss').on('change', browserSync.reload);
+        gulp.watch(paths.scss_import+'**/*.scss').on('change', browserSync.reload);
         gulp.watch(paths.sprites_src+'**/*.png').on('change', browserSync.reload);
 	} else {
 		cb(null);
