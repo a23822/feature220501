@@ -28,6 +28,14 @@
     clear: both;
 }
 
+@mixin mask {
+    position: absolute;
+    top: 0;
+    right: 0;
+    left: 0;
+    bottom: 0;
+}
+
 //다크모드
 @mixin mod-dark($type:'') {
     @critical {
