@@ -275,6 +275,10 @@ a {
   background-color: transparent;
 }
 
+#header {
+    padding-top: 63px;
+}
+
 #secondary img,
 article img,
 figure,
@@ -601,23 +605,23 @@ img.wp-post-image {
   min-height: 400px;
 }
 
-.mag_events_preview .event-col:after {
-  content: '';
-  -webkit-box-shadow: 0 0 10px 0 #4d4d4d;
-  box-shadow: 0 0 10px 0 #4d4d4d;
-  opacity: 0;
-  -webkit-transition: opacity .2s ease;
-  transition: opacity .2s ease;
-  position: absolute;
-  top: 0;
-  right: 0;
-  left: 0;
-  bottom: 0;
-  width: 100%;
-  height: 100%;
-  z-index: 1;
+.mag_events_preview .event-col {
+    position: relative;
+    &:after {
+        content: '';
+        box-shadow: 0 0 10px 0 #4d4d4d;
+        opacity: 0;
+        transition: opacity .2s ease;
+        position: absolute;
+        top: 0;
+        right: 0;
+        left: 0;
+        bottom: 0;
+        width: 100%;
+        height: 100%;
+        z-index: 1;
+    }
 }
-
 .mag_bewerben {
   background-color: #ebeeee;
   display: -webkit-box;
@@ -813,6 +817,10 @@ img.wp-post-image {
   animation: fadeInUp 1s;
 }
 
+.news-item {
+    position: relative;
+}
+
 @keyframes fadeInUp {
   0% {
       opacity: 0;
@@ -825,4 +833,5 @@ img.wp-post-image {
 }
 
 @import './import/import_nav'; // 네비
+@import './import/import_banner'; // 상단 배너
 @import './import/import_media'; // 반응형
