@@ -169,6 +169,10 @@
       padding-top: 0;
       padding-bottom: 50px !important;
     }
+
+    .mag_kacheln h4, .home-kacheln-text {
+      padding: 0;
+    }
   }
   
   @media (min-width: 576px) {
@@ -242,4 +246,36 @@
     .mag_bewerben .image-container .h-100 {
       height: auto !important;
     }
+  }
+
+  @media screen and (min-width: 991.98px) {
+    .mag_kacheln.products {
+      .card-text {
+        margin-bottom: 2px;
+        font-size: 12px;
+        line-height: 14px;
+      }
+      
+      .card-title.text-h2 {
+        margin-bottom: 4px !important;
+        font-size: 18px;
+        line-height: 20px;
+      }
+
+      .text-subtext, .text-subtext p {
+        margin-bottom: 5px !important;
+        line-height: 20px;
+      }
+
+      .mag-button {
+        min-width: 100px;
+        line-height: 20px
+      }
+    } 
+
+    .card-title, .card-text, .text-subtext p {
+      @include elss;
+    }
+    
+    
   }
