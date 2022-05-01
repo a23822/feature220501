@@ -25,6 +25,7 @@
 
     .global-navmenu {
         margin: auto;
+        height: 100%;
         &-wrap {
             height: 100%;
         }
@@ -34,6 +35,7 @@
             &-wrap {
                 position: relative;
                 padding-right: 60px;
+                height: 100%;
             }
         }
         &-item {

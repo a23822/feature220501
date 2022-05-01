@@ -4,6 +4,8 @@
   "description": "",
   "main": "index.js",
   "dependencies": {
+    "@egjs/flicking": "^4.6.3",
+    "@egjs/flicking-plugins": "^4.3.0",
     "gulp-cli": "^2.3.0"
   },
   "devDependencies": {
